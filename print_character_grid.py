@@ -1,3 +1,27 @@
+'''
+The task is: Given a URL, there is a table of data on the webpage that includes coordinates and content.
+You need to print out the content based on the coordinates to form characters (i.e., decode the hidden message).
+
+Note:
+The direction of the coordinate axes;
+Blank grid coordinate points;
+Avoid excessive memory usage when the table is too large.
+
+Example table:
+This is an example document showing the format of the input data for the coding assessment exercise.
+
+x-coordinate Character y-coordinate
+
+0 █ 0
+0 █ 1
+0 █ 2
+1 ▀ 1
+1 ▀ 2
+2 ▀ 1
+2 ▀ 2
+3 ▀ 2
+
+'''
 import requests
 from bs4 import BeautifulSoup
 from itertools import groupby
@@ -57,6 +81,6 @@ def extract_table_from_google_doc(url):
 
 
 # Example usage
-url = "https://docs.google.com/document/d/e/2PACX-1vQGUck9HIFCyezsrBSnmENk5ieJuYwpt7YHYEzeNJkIb9OSDdx-ov2nRNReKQyey-cwJOoEKUhLmN9z/pub"
+url = " "
 table_data = extract_table_from_google_doc(url)
 
